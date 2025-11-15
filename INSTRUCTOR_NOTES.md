@@ -104,7 +104,7 @@ Grading details:
 
   * Signature: `public function __construct(int $id, string $title, int $price)`
   * Correctly assigns to inherited properties (`$this->id`, `$this->title`, `$this->price`), either directly or via `parent::__construct`.
-* 1 pt: `getTypeLabel()` returns `"Book"` exactly.
+* 1 pt: `getTypeLabel()` returns the exact Persian label `"کتاب"`.
 * 1 pt: `getFinalPrice()` returns price with 10% discount:
 
   * Accept forms like `(int) round($this->price * 0.9)` or `(int) ($this->price * 0.9)`.
@@ -125,7 +125,7 @@ Grading details:
 
 * 1 pt: correct class header.
 * 2 pts: constructor with same pattern as `Book`.
-* 1 pt: `getTypeLabel()` returns `"Notebook"` exactly.
+* 1 pt: `getTypeLabel()` returns the exact Persian label `"دفتر"`.
 * 1 pt: `getFinalPrice()` returns the original price (no discount).
 
 ---

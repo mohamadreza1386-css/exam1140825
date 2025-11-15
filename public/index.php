@@ -25,10 +25,10 @@ $products = [];
 
 ?><!DOCTYPE html>
 
-<html lang="en">
+<html lang="fa" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <title>PHP OOP Exam – Product List</title>
+    <title>آزمون PHP OOP – فهرست محصولات</title>
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
@@ -37,15 +37,15 @@ $products = [];
 <header class="site-header">
     <div class="site-header__content">
         <div>
-            <p class="eyebrow">Practical PHP Exam</p>
-            <h1>PHP OOP Exam – Product List</h1>
+            <p class="eyebrow">آزمون عملی PHP</p>
+            <h1>فهرست محصولات – پروژهٔ شی‌ءگرایی</h1>
             <p class="subtitle">
-                Build abstract classes + interfaces, then render store data in a polished UI.
+                با تکمیل کلاس‌های شی‌ءگرا و متصل‌کردن آن‌ها به PDO، این صفحهٔ فارسی یک فروشگاه جمع‌وجور را نمایش می‌دهد.
             </p>
         </div>
         <div class="student-meta glass-panel">
-            <p><strong>Student ID:</strong> <?php echo STUDENT_ID; ?></p>
-            <p><strong>Student Name:</strong> <?php echo STUDENT_NAME; ?></p>
+            <p><strong>شماره دانشجویی:</strong> <?php echo STUDENT_ID; ?></p>
+            <p><strong>نام دانشجو:</strong> <?php echo STUDENT_NAME; ?></p>
         </div>
     </div>
 </header>
@@ -53,21 +53,21 @@ $products = [];
 <main class="site-main">
     <section class="hero">
         <div class="hero__content">
-            <h2>Design the OOP Core, Let the UI Shine</h2>
+            <h2>منطق شی‌ءگرا را بسازید تا رابط فارسی بدرخشد</h2>
             <p>
-                داده‌ها از دیتابیس خوانده می‌شوند و بعد از تکمیل TODOها، کارت‌های محصولات به شکل
-                یک فروشگاه مدرن نمایش داده می‌شوند. روی منطق PHP تمرکز کنید؛ ظاهر از قبل آماده است.
+                داده‌ها از دیتابیس فارسی بارگذاری می‌شوند و پس از کامل‌کردن TODOها، کارت‌های محصولات مثل یک فروشگاه مدرن نمایش داده خواهند شد.
+                روی منطق PHP تمرکز کنید؛ ظاهر و تجربه کاربری از قبل آماده است.
             </p>
             <ul class="hero__highlights">
-                <li>Abstract base class + interface</li>
-                <li>Book &amp; Notebook inheritance</li>
-                <li>PDO-powered data grid</li>
+                <li>کلاس انتزاعی + interface</li>
+                <li>ارث‌بری Book و Notebook</li>
+                <li>شبکه داده با PDO</li>
             </ul>
         </div>
         <div class="hero__visual">
             <div class="glow-card">
-                <p class="glow-card__label">Live Preview</p>
-                <p class="glow-card__value">Responsive UI</p>
+                <p class="glow-card__label">نمایش زنده</p>
+                <p class="glow-card__value">کاملاً واکنش‌گرا</p>
                 <span class="spark"></span>
             </div>
             <div class="gradient-ring"></div>
@@ -77,19 +77,19 @@ $products = [];
     <section class="product-list-section">
         <div class="section-heading">
             <div>
-                <p class="eyebrow">Task Output</p>
-                <h2>Products</h2>
+                <p class="eyebrow">خروجی وظایف</p>
+                <h2>محصولات</h2>
             </div>
             <p class="section-subtitle">
-                پس از ساخت اشیاء و فراخوانی متدها، این لیست به صورت خودکار به‌روز می‌شود.
+                پس از ساخت اشیاء و فراخوانی متدها، این لیست فارسی به صورت خودکار به‌روز می‌شود.
             </p>
         </div>
 
         <?php if (empty($products)): ?>
             <div class="empty-state glass-panel">
-                <h3>Nothing to show… yet!</h3>
+                <h3>فعلاً محصولی وجود ندارد!</h3>
                 <p>
-                    No products yet. Complete the PHP OOP tasks to see the list here.
+                    برای دیدن کارت محصولات، گام‌های شی‌ءگرایی را تکمیل کنید تا داده‌ها از دیتابیس فارسی خوانده شوند.
                 </p>
             </div>
         <?php else: ?>
@@ -97,7 +97,7 @@ $products = [];
                 <?php foreach ($products as $product): ?>
                     <article class="product-card" data-product-card>
                         <header>
-                            <p class="badge">Coming from database</p>
+                            <p class="badge">خوانده‌شده از دیتابیس</p>
                             <h3 class="product-title">
                                 <!-- TODO(Task 6): echo the product title using getTitle() -->
                             </h3>
@@ -107,13 +107,13 @@ $products = [];
                         </header>
                         <dl class="product-prices">
                             <div>
-                                <dt>Base price</dt>
+                                <dt>قیمت پایه</dt>
                                 <dd class="product-price">
                                     <!-- TODO(Task 6): echo the base price using getPrice() -->
                                 </dd>
                             </div>
                             <div>
-                                <dt>Final price</dt>
+                                <dt>قیمت نهایی</dt>
                                 <dd class="product-final-price">
                                     <!-- TODO(Task 6): echo the final price using getFinalPrice() -->
                                 </dd>
@@ -127,7 +127,7 @@ $products = [];
 </main>
 
 <footer class="site-footer">
-    <p>Secret phrase: <?php echo STUDENT_SECRET_PHRASE; ?></p>
+    <p>عبارت محرمانه دانشجو: <?php echo STUDENT_SECRET_PHRASE; ?></p>
 </footer>
 <script src="assets/app.js"></script>
 </body>

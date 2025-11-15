@@ -22,7 +22,7 @@ class Book extends Product implements Sellable
 
     /**
      * TODO(Task 3):
-     * Implement getTypeLabel() so that it returns the exact string "Book".
+     * Implement getTypeLabel() so that it returns the exact Persian string "کتاب".
      */
 
     /**

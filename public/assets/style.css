@@ -31,6 +31,8 @@ body {
   line-height: 1.6;
   position: relative;
   overflow-x: hidden;
+  direction: rtl;
+  text-align: right;
 }
 
 img {
@@ -66,14 +68,13 @@ img {
   display: flex;
   gap: 2rem;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
 }
 
 .eyebrow {
   font-size: 0.85rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
+  letter-spacing: 0.05em;
   color: var(--accent-2);
 }
 
@@ -173,9 +174,8 @@ img {
 }
 
 .glow-card__label {
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  font-size: 0.8rem;
   color: var(--muted);
 }
 
@@ -282,8 +282,6 @@ img {
 
 .badge {
   font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
   color: var(--accent-2);
 }
 
@@ -295,8 +293,6 @@ img {
 
 .product-prices dt {
   font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
   color: var(--muted);
 }
 

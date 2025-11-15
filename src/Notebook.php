@@ -20,7 +20,7 @@ class Notebook extends Product implements Sellable
 
     /**
      * TODO(Task 4):
-     * Implement getTypeLabel() so that it returns the exact string "Notebook".
+     * Implement getTypeLabel() so that it returns the exact Persian string "دفتر".
      */
 
     /**

@@ -6,7 +6,7 @@ type ENUM('book', 'notebook') NOT NULL
 );
 
 INSERT INTO products (title, price, type) VALUES
-('PHP OOP Guide', 150000, 'book'),
-('HTML & CSS Basics', 120000, 'book'),
-('Plain Notebook A5', 30000, 'notebook'),
-('Grid Notebook A4', 45000, 'notebook');
+('راهنمای PHP شی‌گرا', 150000, 'book'),
+('مهارت‌های HTML و CSS', 120000, 'book'),
+('دفتر ساده A5', 30000, 'notebook'),
+('دفتر شطرنجی A4', 45000, 'notebook');
