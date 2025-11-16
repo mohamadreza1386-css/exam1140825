@@ -1,13 +1,7 @@
 <?php
-declare(strict_types=1);
+declare(strict_types=0);
 
-/**
- * Abstract base class for all products in this exam.
- *
- * NOTE TO STUDENTS:
- * - Do NOT rename this class or its methods.
- * - Complete all TODO sections as described in README.md.
- */
+
 abstract class Product
 {
     // TODO(Task 1):
@@ -15,6 +9,9 @@ abstract class Product
     // - int $id
     // - string $title
     // - int $price
+    protected int $id;
+    protected string $title;
+    protected int $price;
 
     /**
      * TODO(Task 1):
@@ -24,6 +21,12 @@ abstract class Product
      *
      * It must assign the arguments to the protected properties.
      */
+    public function __construct(int $id, string $title, int $price)
+    {
+        $this->id = $id;
+        $this->title = $title;
+        $this->price = $price;
+    }
 
     /**
      * TODO(Task 1):
@@ -31,6 +34,10 @@ abstract class Product
      *
      * public function getTitle(): string
      */
+    public function getTitle(): string
+    {
+        return $this->title;
+    }
 
     /**
      * TODO(Task 1):
@@ -38,6 +45,10 @@ abstract class Product
      *
      * public function getPrice(): int
      */
+    public function getPrice(): int
+    {
+        return $this->price;
+    }
 
     /**
      * Each subclass must return a human-readable type label,
@@ -45,5 +56,7 @@ abstract class Product
      *
      * This method MUST stay abstract.
      */
+
     abstract public function getTypeLabel(): string;
 }
+
